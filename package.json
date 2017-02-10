@@ -1,0 +1,32 @@
+{
+    "name": "gml",
+    "displayName": "GML",
+    "description": "add GML(GameMaker Language) to VS Code",
+    "version": "0.0.1",
+    "publisher": "vscode",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gml",
+            "aliases": ["GML", "gml"],
+            "extensions": [".gml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gml",
+            "scopeName": "source.gml",
+            "path": "./syntaxes/gml.tmLanguage"
+        }],
+        "snippets": [
+          {
+            "language": "gml",
+            "path": "./snippets/gml.json"
+          }
+        ]
+    }
+}

@@ -1,0 +1,99 @@
+{
+  "else": {
+    "prefix": "else",
+    "body": [
+      "else",
+      "{",
+      "\t$0",
+      "}"
+    ]
+  },
+
+  "for":{
+    "prefix": "for",
+    "body": [
+      "for (var ${1:i} = ${2:0}; ${1:i} < ${3:val}; ${1:i}++)",
+      "{",
+      "\t$0",
+      "}"
+    ]
+  },
+
+  "if":{
+    "prefix": "if",
+    "body": [
+      "if (${1:})",
+      "{",
+      "\t$0",
+      "}"
+    ]
+  },
+
+  "if-else": {
+    "prefix": "ifelse",
+    "body": [
+      "if (${1:})",
+      "{",
+      "\t$0",
+      "}",
+      "else",
+      "{",
+      "",
+      "}"
+    ]
+  },
+
+  "repeat": {
+    "prefix": "repeat",
+    "body": [
+      "repeat (${1:times})",
+      "{",
+      "\t${2:}",
+      "}"
+    ]
+  },
+
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:})",
+      "{",
+      "\tcase ${3:}:",
+      "\t\t${4:}",
+      "\tdefault:",
+      "\t\t${2:break}",
+      "}"
+    ]
+  },
+
+  "while": {
+    "prefix": "while",
+    "body": [
+      "while (${1:})",
+      "{",
+      "\t${2:}",
+      "}"
+    ]
+  },
+
+  "with": {
+    "prefix": "with",
+    "body": [
+      "with (${1:})",
+      "{",
+      "\t${2:}",
+      "}"
+    ]
+  },
+
+  "do": {
+    "prefix": "do",
+    "body": [
+      "do",
+      "{",
+      "\t${2:}",
+      "}",
+      "until (${1:})"
+    ]
+  }
+}
